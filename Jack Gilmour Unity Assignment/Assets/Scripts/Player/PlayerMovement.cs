@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
-    public float HorizontalMovement;
-    public Rigidbody2D rb;
+    public float Speed = 5f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	void fixedupdate () horizontal
+    private void Update()
     {
-        float
-
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation.normalized, rotation, Speed * Time.deltaTime);
     }
+}
