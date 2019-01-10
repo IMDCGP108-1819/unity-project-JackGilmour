@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\weapon.cs" />
+    <Compile Include="Assets\Scripts\Timer\Countdown.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/jackg/Documents/GitHub/unity-project-JackGilmour/Jack Gilmour Unity Assignment/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
