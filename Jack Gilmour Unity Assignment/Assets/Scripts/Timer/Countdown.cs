@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Countdown : MonoBehaviour
 {
@@ -31,7 +33,14 @@ public class Countdown : MonoBehaviour
             doOnce = true;
             uiText.text = "0.00";
             timer = 0.0f;
+
+            if(timer <= 0)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
+
         }
+
 
     }
 }

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiText: {fileID: 942850067}
-  mainTimer: 60
+  mainTimer: 5
 --- !u!4 &89930974
 Transform:
   m_ObjectHideFlags: 0
