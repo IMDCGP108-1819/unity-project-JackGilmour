@@ -22,5 +22,8 @@ public class bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-
+    private void Update()
+    {
+        Destroy(gameObject, 3f); //Destroys the astroid after 3 seconds
+    }
 }
