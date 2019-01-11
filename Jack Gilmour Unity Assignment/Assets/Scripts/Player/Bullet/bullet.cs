@@ -24,6 +24,6 @@ public class bullet : MonoBehaviour
 
     private void Update()
     {
-        Destroy(gameObject, 3f); //Destroys the bullet after 3 seconds
+        Destroy(gameObject, 1f); //Destroys the bullet after 1 second
     }
 }

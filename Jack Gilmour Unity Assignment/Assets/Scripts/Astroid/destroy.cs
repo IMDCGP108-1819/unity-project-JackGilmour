@@ -11,4 +11,12 @@ public class destroy : MonoBehaviour {
                 Destroy(gameObject);
             }
 
- }
+    void OnCollisionEnter(Collision otherObj)
+    {
+        if (otherObj.gameObject.tag == "Missile")
+        {
+            Destroy(gameObject, .5f);
+        }
+    }
+
+}
