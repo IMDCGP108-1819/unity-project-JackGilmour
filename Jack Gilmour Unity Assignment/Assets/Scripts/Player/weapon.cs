@@ -11,7 +11,7 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) //Shoots a bullet everytime I press the left mouse button
         {
             Shoot();
         }
@@ -19,7 +19,7 @@ public class weapon : MonoBehaviour
 
     void Shoot ()
     {
-        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation); //Sets the position and rotation of the bullet from the firepoint
     }
 
 }

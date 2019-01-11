@@ -5,18 +5,15 @@ using UnityEngine;
 public class destroy : MonoBehaviour {
 
     // Use this for initialization
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D hitInfo) //Destroys the asteroid when hit with another collider
             {
                 Debug.Log(hitInfo.name);
                 Destroy(gameObject);
             }
 
-    void OnCollisionEnter(Collision otherObj)
+    private void Update()
     {
-        if (otherObj.gameObject.tag == "Missile")
-        {
-            Destroy(gameObject, .5f);
-        }
+        Destroy(gameObject, 5f); //Destroys the bullet after 1 second
     }
 
 }
